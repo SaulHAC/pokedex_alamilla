@@ -125,7 +125,7 @@ fun ItemPokemon(pokemon: Pokemon, idPokemon: Int) {
                     .size(140.dp)
                     .padding(4.dp)
             )
-            Text(modifier = Modifier.align(Alignment.CenterHorizontally), fontSize = 12.sp, text = pokemon.name, fontFamily = FontFamily(Font(R.font.pressstart2p_regular)))
+            Text(color = Color(0xB7FFFFFF), modifier = Modifier.align(Alignment.CenterHorizontally), fontSize = 12.sp, text = pokemon.name, fontFamily = FontFamily(Font(R.font.pressstart2p_regular)))
         }
     }
 }

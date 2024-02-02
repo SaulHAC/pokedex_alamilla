@@ -96,6 +96,7 @@ fun About(pokemon: DetailPokemonModel?) {
             Row {
                 Text(
                     fontSize = 24.sp,
+                    color = Color(0xB7FFFFFF),
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(bottom = 18.dp),
                     text = "About"
@@ -143,21 +144,22 @@ fun About(pokemon: DetailPokemonModel?) {
             Row {
                 Text(
                     modifier = Modifier.padding(bottom = 14.dp),
+                    color = Color(0xB7FFFFFF),
                     text = "${pokemon?.species?.name}"
                 )
             }
             Row {
-                Text(modifier = Modifier.padding(bottom = 14.dp), text = "${pokemon?.height} dm")
+                Text(color = Color(0xB7FFFFFF), modifier = Modifier.padding(bottom = 14.dp), text = "${pokemon?.height} dm")
             }
             Row {
-                Text(modifier = Modifier.padding(bottom = 14.dp), text = "${pokemon?.weight} lbs")
+                Text(color = Color(0xB7FFFFFF), modifier = Modifier.padding(bottom = 14.dp), text = "${pokemon?.weight} lbs")
             }
 
             val abilities = pokemon?.abilities?.map { it.ability.name }
             val joinedAbilities = abilities?.joinToString(", ")
 
             Row {
-                Text(modifier = Modifier.padding(bottom = 14.dp), text = "$joinedAbilities")
+                Text(color = Color(0xB7FFFFFF), modifier = Modifier.padding(bottom = 14.dp), text = "$joinedAbilities")
             }
         }
     }
@@ -167,6 +169,7 @@ fun About(pokemon: DetailPokemonModel?) {
 fun Stats(pokemon: DetailPokemonModel) {
     Column(modifier = Modifier.padding(top = 50.dp, start = 30.dp, end = 30.dp)) {
         Text(
+            color = Color(0xB7FFFFFF),
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 18.dp),
@@ -269,6 +272,7 @@ fun ImagePokemon(pokemon: DetailPokemonModel?, id: Int) {
                     .offset(y = 30.dp),
                 fontSize = 46.sp,
                 text = pokemon.name,
+                color = Color(0xB7FFFFFF),
                 fontFamily = FontFamily(Font(R.font.righteous_regular))
             )
 

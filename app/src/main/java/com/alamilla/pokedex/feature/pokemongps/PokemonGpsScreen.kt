@@ -132,12 +132,14 @@ fun NotificationScreen(locationViewModel: LocationViewModel, navController: NavH
         // Mostrar la distancia
         Text(
             fontFamily = FontFamily(Font(R.font.righteous_regular)),
+            color = Color(0xB7FFFFFF),
             text = "Metros recorridos: ",
             fontSize = 24.sp
         )
 
         Text(
             fontFamily = FontFamily(Font(R.font.righteous_regular)),
+            color = Color(0xB7FFFFFF),
             text = "%.2f m".format(distance),
             fontSize = 24.sp
         )
